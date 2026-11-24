@@ -3,11 +3,15 @@
 // Node 22 runs this TypeScript as-is.
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// The excuse a robot vacuum gives after eating a sock: deadpan legalism.
-// Framed as a defence, with an em-dash punch: the sock signed an NDA on
-// the way down, so the vacuum can neither confirm nor deny lunch.
+// The excuse a robot vacuum gives after eating a sock: deadpan legalism,
+// now routed through counsel. The sock signed an NDA on the way down, so
+// lunch itself is classified. "My lawyer advises" replaces the flat
+// "In my defence" opener: a vacuum with a lawyer is a fresher, funnier
+// frame than a vacuum defending itself. The closer is tightened from the
+// stock "neither confirm nor deny" phrasing to "lunch remains classified" —
+// same legal gag, shorter, and the punch lands on the last word.
 const line =
-  "In my defence, the sock signed an NDA on the way down — I can neither confirm nor deny lunch.";
+  "My lawyer advises the sock signed an NDA on the way down — lunch remains classified.";
 
 // The grader runs this in a sandbox with /output ready. Outside the
 // grader, MAKEFUN_OUTPUT_DIR stands in for /output:
